@@ -283,6 +283,50 @@ article.active {
   z-index: 1;
 }
 
+.button {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  width: 110px;
+  border-radius: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 9px;
+  margin-left: 40px;
+  font-size: 13px;
+  background-color: rgba(240, 255, 255, 0.326);
+}
+
+.button:hover {
+  color:white;
+}
+
+.profile-wrapper {
+  position: relative;
+  width: 70px;
+  height: auto;
+}
+
+.profile {
+  border-radius: 7px;
+  width: 70px;
+  display: block;
+}
+
+.profile-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.profile-wrapper:hover .profile-color {
+  opacity: 1;
+}
+
+
+
 .content-card::before {
   content: "";
   position: absolute;
@@ -334,6 +378,7 @@ main {
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
+  
 }
 
 .info-content .name {
@@ -1250,6 +1295,12 @@ textarea.form-input::-webkit-resizer { display: none; }
   .project-img,
   .blog-banner-box { height: auto; }
 
+  .button {
+    font-size: 11px;
+    width: 98px; 
+  }
+  }
+
 }
 
 
@@ -1569,6 +1620,9 @@ textarea.form-input::-webkit-resizer { display: none; }
     grid-template-columns: 1fr 1fr;
     gap: 30px 15px;
   }
+
+
+
 
 
 
