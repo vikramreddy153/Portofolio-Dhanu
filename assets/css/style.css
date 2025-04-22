@@ -301,30 +301,17 @@ article.active {
   color:white;
 }
 
-.profile-wrapper {
-  position: relative;
-  width: 70px;
-  height: auto;
-}
-
 .profile {
   border-radius: 7px;
   width: 70px;
-  display: block;
+  height: auto;
+  transition: 0.3s ease-in-out;
 }
 
-.profile-color {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+.profile:hover {
+  content: url('./assets/images/profile-color.png');
+  transform: scale(1.05);
 }
-
-.profile-wrapper:hover .profile-color {
-  opacity: 1;
-}
-
 
 
 .content-card::before {
