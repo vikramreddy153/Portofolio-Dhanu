@@ -157,3 +157,15 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const profilePic = document.getElementById("profile-pic");
+
+  profilePic.addEventListener("mouseenter", () => {
+    profilePic.src = "./assets/images/profile-color.png";
+  });
+
+  profilePic.addEventListener("mouseleave", () => {
+    profilePic.src = "./assets/images/profile-bw.png";
+  });
+});
